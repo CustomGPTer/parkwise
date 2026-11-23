@@ -1,6 +1,5 @@
-Parkwise 1.0.1
+Parkwise 1.0.2
 
-- Fixed: Parkwise closed when you tapped Save position. Saving now works.
-- If Parkwise ever closes unexpectedly, the next time you open it you can share a short report to help get it fixed. It holds the error and your phone model, nothing about where you park, and it is never sent unless you choose to.
+- Fixed: the Google Maps and Waze buttons on Find my car had their names cut off on some phones.
 
-Install it over 1.0.0: your parkings, places and settings are kept. Android 8 or later.
+Install it over the earlier version: your parkings, places and settings are kept. Android 8 or later.
