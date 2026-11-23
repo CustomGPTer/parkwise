@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Parkwise: find your parked car, free and private, with no adverts</title>
+<meta name="description" content="Parkwise is a free Android app that saves where you parked with one tap and walks you back with a live arrow. It remembers the level and bay, reminds you before your parking ticket runs out, and keeps everything on your phone. No adverts, no account.">
+<meta name="author" content="Jonathan Jackson">
+<link rel="canonical" href="https://customgpter.github.io/parkwise/">
+<meta name="theme-color" content="#f6eee1" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14110d" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Parkwise">
+<meta property="og:title" content="Parkwise: find your parked car, free and private, with no adverts">
+<meta property="og:description" content="Parkwise is a free Android app that saves where you parked with one tap and walks you back with a live arrow. It remembers the level and bay, reminds you before your parking ticket runs out, and keeps everything on your phone. No adverts, no account.">
+<meta property="og:url" content="https://customgpter.github.io/parkwise/">
+<meta property="og:image" content="https://customgpter.github.io/parkwise/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Parkwise: the gold pin, the parked-for dial and the walk back to the car">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="./assets/apple-touch-icon.png">
+<link rel="preload" href="./assets/fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="./assets/fonts/atkinson-hyperlegible-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="./assets/site.css?v=1">
+<link rel="stylesheet" href="./assets/house.css?v=1">
+<link rel="stylesheet" href="./assets/apps-list.css?v=1">
+<script src="./assets/apps-list.js?v=1" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Parkwise", "url": "https://customgpter.github.io/parkwise/", "description": "Parkwise is a free Android app that saves where you parked with one tap and walks you back with a live arrow. It remembers the level and bay, reminds you before your parking ticket runs out, and keeps everything on your phone. No adverts, no account.", "applicationCategory": "TravelApplication", "operatingSystem": "Android 8 or later", "softwareVersion": "1.0.0", "downloadUrl": "https://github.com/CustomGPTer/parkwise/releases/latest/download/Parkwise.apk", "releaseNotes": "https://customgpter.github.io/parkwise/releases.html", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "GBP"}, "inLanguage": "en-GB", "image": "https://customgpter.github.io/parkwise/assets/og.png", "author": {"@type": "Person", "name": "Jonathan Jackson"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is Parkwise really free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. There is no paid version, no subscription and no adverts, and nothing is locked. Every feature is there from the start."}}, {"@type": "Question", "name": "Is it on Google Play?", "acceptedAnswer": {"@type": "Answer", "text": "No. Parkwise is a personal project and is downloaded from this site as an Android app file. It needs Android 8 or later, which covers almost every phone made since 2017."}}, {"@type": "Question", "name": "Does it need the internet?", "acceptedAnswer": {"@type": "Answer", "text": "Only for the map pictures. Saving your spot, the arrow, the distance, the ticket reminders and everything else work with no signal. Save the map in Settings, Offline maps, and it shows underground too."}}, {"@type": "Question", "name": "How accurate is it?", "acceptedAnswer": {"@type": "Answer", "text": "Parkwise waits until the phone is sure of its position to within 30 feet before it saves, then keeps improving it. Deep inside a multi-storey GPS cannot reach, so add the level and bay, or move the pin by hand."}}, {"@type": "Question", "name": "Does it share where I park?", "acceptedAnswer": {"@type": "Answer", "text": "No. Your parkings, photos and places are kept only on your phone. When you choose to share a spot, Parkwise hands a plain message to the app you pick. There is no Parkwise server."}}, {"@type": "Question", "name": "Why does it ask for location all the time?", "acceptedAnswer": {"@type": "Answer", "text": "Only if you switch on auto-save. To save the spot when the car's Bluetooth disconnects or you stop driving, it needs to read the location at that moment while the app is closed. Without auto-save it only uses location while it is open."}}, {"@type": "Question", "name": "How does it read the car park sign?", "acceptedAnswer": {"@type": "Answer", "text": "Photograph the level or bay sign and Parkwise reads the writing using the open-source Tesseract engine, on your phone. The photo is never uploaded."}}, {"@type": "Question", "name": "Will the ticket reminders definitely arrive?", "acceptedAnswer": {"@type": "Answer", "text": "They are made on your phone and arrive on time on almost every phone. Some phones hold back alarms to save battery: allow notifications and on-time reminders in Settings, and check the signs too."}}, {"@type": "Question", "name": "Does it run down the battery?", "acceptedAnswer": {"@type": "Answer", "text": "No. Location is only used while Parkwise is open, or at the moment you park if auto-save is on. Nothing runs in the background otherwise."}}, {"@type": "Question", "name": "Does it work on an iPhone?", "acceptedAnswer": {"@type": "Answer", "text": "No. Parkwise is for Android phones and tablets only."}}, {"@type": "Question", "name": "Who made it?", "acceptedAnswer": {"@type": "Answer", "text": "Parkwise is made by Jonathan Jackson, an independent developer in the United Kingdom."}}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+<div class="wrap">
+<a class="brand" href="./" aria-label="Parkwise home"><svg viewBox="0 0 108 108" aria-hidden="true"><defs><radialGradient id="pwb" cx="50%" cy="36%" r="74%"><stop offset="0" stop-color="#3A2C1F"/><stop offset="1" stop-color="#120E0A"/></radialGradient><linearGradient id="pwg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F6DC9C"/><stop offset=".5" stop-color="#D6A84E"/><stop offset="1" stop-color="#9C6F24"/></linearGradient></defs><rect width="108" height="108" rx="24" fill="url(#pwb)"/><circle cx="54" cy="54" r="38" fill="none" stroke="#D9AE5B" stroke-opacity=".18"/><ellipse cx="54" cy="84" rx="11" ry="3" fill="#000" fill-opacity=".35"/><path d="M54 82C49 73 32 61 32 46A22 22 0 1 1 76 46C76 61 59 73 54 82Z" fill="url(#pwg)"/><circle cx="54" cy="46" r="15" fill="#FBF4E6"/><g transform="translate(42 34)"><path fill="#1A140E" d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></g></svg><span>Parkwise</span></a>
+<nav aria-label="Main"><ul><li><a href="./#features">Features</a></li><li><a href="./compare.html">Compare</a></li><li><a href="./releases.html">Releases</a></li><li><a class="more-apps" href="./more-apps.html"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5" rx="1.6"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.6"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.6"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.6"/></svg>More apps</a></li></ul></nav>
+<a class="button small" href="https://github.com/CustomGPTer/parkwise/releases/latest/download/Parkwise.apk"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11"/><path d="M7 10.5l5 5 5-5"/><path d="M5 20h14"/></svg>Download</a>
+</div>
+</header>
+<main id="main">
+<div class="hero">
+<div class="wrap hero-grid">
+<div class="hero-copy">
+<h1>Never lose the car again.</h1>
+<p class="lede">Parkwise saves where you parked with one tap, then walks you back with a live arrow, the distance, and a gentle tap in your hand when the phone points at the car.</p><p class="lede">It remembers the level, bay and zone in multi-storeys, counts down your parking ticket, and keeps all of it on your phone.</p>
+<p class="get" id="download"><a class="button" href="https://github.com/CustomGPTer/parkwise/releases/latest/download/Parkwise.apk"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11"/><path d="M7 10.5l5 5 5-5"/><path d="M5 20h14"/></svg>Download for Android</a><a class="aside" href="#install">How to install</a></p>
+<ul class="pills"><li>Version 1.0.0</li><li>Android 8 or later</li><li>42.0 MB</li></ul>
+<p class="facts">Free, with nothing to unlock. No adverts, no account with the developer, no tracking. <a href="compare.html">Compare</a> or read the <a href="releases.html">release notes</a>.</p>
+<p class="facts">Chrome may say the file might be harmful. It shows this for app files that do not come from Google Play. Choose Download anyway.</p>
+</div>
+<div class="hero-phone"><div class="phone"><img src="./assets/screens/find.png" alt="Find my car: the route line to the car, a live arrow, the distance and walking time." width="393" height="852" fetchpriority="high"></div></div>
+</div>
+</div>
+
+<section class="promises" aria-label="In short">
+<div class="wrap"><ul><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M8.6 12.4l2.3 2.3 4.5-4.9"/></svg><span><b>No adverts</b><span>None in the app and none on this site.</span></span></li><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M8.6 12.4l2.3 2.3 4.5-4.9"/></svg><span><b>Stays on your phone</b><span>Where you park is never sent to anyone.</span></span></li><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M8.6 12.4l2.3 2.3 4.5-4.9"/></svg><span><b>Works with no signal</b><span>Saving and the arrow back work underground.</span></span></li><li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M8.6 12.4l2.3 2.3 4.5-4.9"/></svg><span><b>No account</b><span>Nothing to sign up for.</span></span></li></ul></div>
+</section>
+
+<section id="screens" aria-labelledby="screens-h">
+<div class="wrap">
+<h2 id="screens-h">A look inside</h2>
+<p class="intro">These are the real screens, drawn from the app&#x27;s own code with a made-up parking, over the real map. Swipe or scroll sideways to see them all.</p>
+<div class="gallery" tabindex="0" role="region" aria-label="Screens from Parkwise"><figure class="shot"><div class="phone"><img src="./assets/screens/opening.png" alt="The opening: the gold pin drops in, with &quot;Privacy by design&quot; underneath." width="393" height="852" loading="eager" decoding="async"></div><figcaption>The opening: the gold pin drops in, with &quot;Privacy by design&quot; underneath.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/home.png" alt="Home: how long you have been parked, the level and bay, ticket time left and how far away the car is." width="393" height="852" loading="eager" decoding="async"></div><figcaption>Home: how long you have been parked, the level and bay, ticket time left and how far away the car is.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/save.png" alt="Saving: it waits for an accurate fix, drops the pin, then lets you add a name, notes, photos, the level and a ticket." width="393" height="852" loading="eager" decoding="async"></div><figcaption>Saving: it waits for an accurate fix, drops the pin, then lets you add a name, notes, photos, the level and a ticket.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/find.png" alt="Find my car: the route line to the car, a live arrow, the distance and walking time." width="393" height="852" loading="lazy" decoding="async"></div><figcaption>Find my car: the route line to the car, a live arrow, the distance and walking time.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/details.png" alt="Level, bay and zone colour, read from a photo of the sign, and the parking ticket with its countdown." width="393" height="852" loading="lazy" decoding="async"></div><figcaption>Level, bay and zone colour, read from a photo of the sign, and the parking ticket with its countdown.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/history.png" alt="History: every parking by day, with what you spent this month at the top." width="393" height="852" loading="lazy" decoding="async"></div><figcaption>History: every parking by day, with what you spent this month at the top.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/stats.png" alt="Your parking: time parked, money spent, busiest days and where you park most." width="393" height="852" loading="lazy" decoding="async"></div><figcaption>Your parking: time parked, money spent, busiest days and where you park most.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/home-dark.png" alt="Dark mode, with the same gold." width="393" height="852" loading="lazy" decoding="async"></div><figcaption>Dark mode, with the same gold.</figcaption></figure><figure class="shot"><div class="phone"><img src="./assets/screens/find-dark.png" alt="Walking back at night: the dark map keeps the screen easy on the eyes." width="393" height="852" loading="lazy" decoding="async"></div><figcaption>Walking back at night: the dark map keeps the screen easy on the eyes.</figcaption></figure></div>
+</div>
+</section>
+
+<section id="how" aria-labelledby="how-h">
+<div class="wrap">
+<h2 id="how-h">How it works</h2>
+<p class="intro">Three moments: when you park, while you are away, and when you come back.</p>
+<ol class="steps"><li><h3>Park and tap Save</h3><p>Parkwise finds your exact spot and drops a gold pin on it. In a multi-storey, tap the level and bay, or photograph the sign.</p></li><li><h3>Get on with your day</h3><p>The parked notification and widgets show how long you have been, and the ticket countdown reminds you before it runs out.</p></li><li><h3>Walk straight back</h3><p>Open Find my car. The arrow points the way and the distance counts down until the phone buzzes: you are at your car.</p></li></ol>
+</div>
+</section>
+
+<section id="features" aria-labelledby="features-h">
+<div class="wrap">
+<h2 id="features-h">Everything is in, and all of it is free</h2>
+<p class="intro">Nothing below is held back for a paid tier, because there is no paid tier. The extras that need more access are off until you switch them on.</p>
+<div class="groups"><div class="group"><h3>Saving the spot</h3><dl><div><dt>One tap, accurate to 30 ft</dt><dd>Parkwise saves as soon as your phone knows where it is to within 30 feet, then keeps fine-tuning for half a minute. Underground, it saves its best reading after ten seconds and says it is rough.</dd></div><div><dt>Put the pin exactly right</dt><dd>Move the map under the pin to mark the very bay, with satellite view if you want to see the lines.</dd></div><div><dt>Auto-save, if you want it</dt><dd>Off until you switch it on: save when the car&#x27;s Bluetooth disconnects, or when the phone senses you have stopped driving and started walking.</dd></div></dl></div><div class="group"><h3>Walking back</h3><dl><div><dt>A live arrow and the distance</dt><dd>The map opens on you and the car, a gold line draws the way, and the arrow turns as you turn. It buzzes when you arrive.</dd></div><div><dt>Feel the way</dt><dd>Optional pulses: the phone taps your hand when it points at the car, faster as you get closer.</dd></div><div><dt>Camera view</dt><dd>Hold the phone up and a gold pin floats over the camera picture where the car is. Nothing is recorded.</dd></div><div><dt>Google Maps, Waze and offline maps</dt><dd>Hand the walk to Google Maps or Waze in one tap, and save the map for the places you go so it shows with no signal.</dd></div></dl></div><div class="group"><h3>Car parks and tickets</h3><dl><div><dt>Level, bay and zone</dt><dd>Tap the level, type the bay, pick the zone colour, or photograph the sign and let Parkwise read it, on the phone.</dd></div><div><dt>Never overstay</dt><dd>Set the ticket in two taps. A ring counts down, and reminders arrive 15 and 5 minutes before it runs out.</dd></div><div><dt>What parking costs you</dt><dd>Note the price and see the month&#x27;s total, the year, your busiest days and where you park most.</dd></div></dl></div><div class="group"><h3>Everyday</h3><dl><div><dt>Always at hand</dt><dd>A parked notification with Find and I&#x27;ve got my car, three home screen widgets, a Quick Settings tile and icon shortcuts.</dd></div><div><dt>History, places and sharing</dt><dd>Every parking kept by day. Home, work and site are named for you. Share a plain message with a Google Maps link, or a QR code.</dd></div><div><dt>Backup and app lock</dt><dd>A backup file locked with your password, kept on your phone or in Google Drive, and an optional fingerprint lock.</dd></div><div><dt>Your look</dt><dd>Light or dark, colours from your wallpaper, larger text, high contrast, and several vehicles if you need them.</dd></div></dl></div></div>
+</div>
+</section>
+
+<section id="privacy" aria-labelledby="privacy-h">
+<div class="wrap">
+<h2 id="privacy-h">Where you park is your business</h2>
+<ul class="plain"><li><h3>Kept on your phone</h3><p>Your parkings, photos, places and stats stay in the app. There is no account and no Parkwise server.</p></li><li><h3>No ads, no tracking</h3><p>There is no advertising, analytics or tracking, in the app or on this site.</p></li><li><h3>Sharing is your choice</h3><p>Share a spot and Parkwise writes a plain message with a map link for the app you pick. Nothing goes through anyone in between.</p></li><li><h3>Only map pictures online</h3><p>The map is drawn from OpenFreeMap&#x27;s OpenStreetMap tiles, with no key and no account. Those servers see which squares of map are fetched, never who you are or where you parked.</p></li></ul>
+</div>
+</section>
+
+<section id="install" aria-labelledby="install-h">
+<div class="wrap">
+<h2 id="install-h">Installing and updating</h2>
+<p class="intro">Parkwise is not on Google Play, so your phone asks a couple of extra questions the first time.</p>
+<ol class="steps"><li><h3>Download the app file</h3><p>Tap Download on your phone. The file is called Parkwise.apk and is about 42.0 MB. If Chrome says the file might be harmful, choose Download anyway.</p></li><li><h3>Allow the install</h3><p>Open the file. The first time, Android asks you to allow your browser to install apps. Allow it, go back and tap Install. If Google Play Protect steps in, choose More details, then Install anyway.</p></li><li><h3>Updating later</h3><p>In Settings, About, Check for updates opens the release notes page. Install the new file over the old one and your parkings, places and settings are kept.</p></li></ol>
+<p class="after-table">Version 1.0.0, released 23 November 2026. See the <a href="releases.html">release notes</a>, or <a href="releases.html#checking">check your download</a>.</p>
+</div>
+</section>
+
+<section id="questions" aria-labelledby="questions-h">
+<div class="wrap">
+<h2 id="questions-h">Questions</h2>
+<div class="faq"><details><summary>Is Parkwise really free?</summary><p>Yes. There is no paid version, no subscription and no adverts, and nothing is locked. Every feature is there from the start.</p></details><details><summary>Is it on Google Play?</summary><p>No. Parkwise is a personal project and is downloaded from this site as an Android app file. It needs Android 8 or later, which covers almost every phone made since 2017.</p></details><details><summary>Does it need the internet?</summary><p>Only for the map pictures. Saving your spot, the arrow, the distance, the ticket reminders and everything else work with no signal. Save the map in Settings, Offline maps, and it shows underground too.</p></details><details><summary>How accurate is it?</summary><p>Parkwise waits until the phone is sure of its position to within 30 feet before it saves, then keeps improving it. Deep inside a multi-storey GPS cannot reach, so add the level and bay, or move the pin by hand.</p></details><details><summary>Does it share where I park?</summary><p>No. Your parkings, photos and places are kept only on your phone. When you choose to share a spot, Parkwise hands a plain message to the app you pick. There is no Parkwise server.</p></details><details><summary>Why does it ask for location all the time?</summary><p>Only if you switch on auto-save. To save the spot when the car&#x27;s Bluetooth disconnects or you stop driving, it needs to read the location at that moment while the app is closed. Without auto-save it only uses location while it is open.</p></details><details><summary>How does it read the car park sign?</summary><p>Photograph the level or bay sign and Parkwise reads the writing using the open-source Tesseract engine, on your phone. The photo is never uploaded.</p></details><details><summary>Will the ticket reminders definitely arrive?</summary><p>They are made on your phone and arrive on time on almost every phone. Some phones hold back alarms to save battery: allow notifications and on-time reminders in Settings, and check the signs too.</p></details><details><summary>Does it run down the battery?</summary><p>No. Location is only used while Parkwise is open, or at the moment you park if auto-save is on. Nothing runs in the background otherwise.</p></details><details><summary>Does it work on an iPhone?</summary><p>No. Parkwise is for Android phones and tablets only.</p></details><details><summary>Who made it?</summary><p>Parkwise is made by Jonathan Jackson, an independent developer in the United Kingdom.</p></details></div>
+</div>
+</section>
+
+<section class="closing" aria-labelledby="closing-h">
+<div class="wrap">
+<div><h2 id="closing-h">Park it. Find it.</h2><p>Free, with no adverts and nothing to unlock. Made by the developer of several other free Android apps: <a href="more-apps.html">see them all</a>.</p></div>
+<a class="button" href="https://github.com/CustomGPTer/parkwise/releases/latest/download/Parkwise.apk"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11"/><path d="M7 10.5l5 5 5-5"/><path d="M5 20h14"/></svg>Download for Android</a>
+</div>
+</section>
+</main>
+<footer class="colophon">
+<div class="wrap">
+<div>
+<a class="brand" href="./" aria-label="Parkwise home"><svg viewBox="0 0 108 108" aria-hidden="true"><defs><radialGradient id="pwb" cx="50%" cy="36%" r="74%"><stop offset="0" stop-color="#3A2C1F"/><stop offset="1" stop-color="#120E0A"/></radialGradient><linearGradient id="pwg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F6DC9C"/><stop offset=".5" stop-color="#D6A84E"/><stop offset="1" stop-color="#9C6F24"/></linearGradient></defs><rect width="108" height="108" rx="24" fill="url(#pwb)"/><circle cx="54" cy="54" r="38" fill="none" stroke="#D9AE5B" stroke-opacity=".18"/><ellipse cx="54" cy="84" rx="11" ry="3" fill="#000" fill-opacity=".35"/><path d="M54 82C49 73 32 61 32 46A22 22 0 1 1 76 46C76 61 59 73 54 82Z" fill="url(#pwg)"/><circle cx="54" cy="46" r="15" fill="#FBF4E6"/><g transform="translate(42 34)"><path fill="#1A140E" d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></g></svg><span>Parkwise</span></a>
+<p>&copy; 2026 Jonathan Jackson. Parkwise is an independent app.</p>
+<p>This site uses no cookies and no tracking.</p>
+<p>Set in Bricolage Grotesque and Atkinson Hyperlegible.</p>
+</div>
+<nav aria-label="The app"><h2>The app</h2><ul>
+<li><a href="./">Home</a></li>
+<li><a href="./compare.html">Compare</a></li>
+<li><a href="./releases.html">Release notes</a></li>
+</ul></nav>
+<nav aria-label="Legal"><h2>Legal</h2><ul>
+<li><a href="./privacy.html">Privacy policy</a></li>
+<li><a href="./terms.html">Terms of use</a></li>
+<li><a href="./licences.html">Licences</a></li>
+</ul></nav>
+<nav aria-label="More"><h2>More</h2><ul>
+<li><a href="./more-apps.html">More apps</a></li>
+<li><a href="https://customgpter.github.io/">All apps</a></li>
+<li><a href="https://github.com/CustomGPTer/parkwise/issues">Contact</a></li>
+</ul></nav>
+</div>
+</footer>
+</body>
+</html>
