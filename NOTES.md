@@ -1,5 +1,7 @@
-Parkwise 1.0.2
+Parkwise 1.0.3 ties the app into TorusApps.com.
 
-- Fixed: the Google Maps and Waze buttons on Find my car had their names cut off on some phones.
+- Check for updates now asks the signed catalogue on TorusApps.com, only when you tap it; when a newer version is out it says Update available and the next tap opens the Parkwise page.
+- Settings, About now has Website, More apps, Privacy policy and Email links to torusapps.com.
+- The privacy note says what the update check reads.
 
-Install it over the earlier version: your parkings, places and settings are kept. Android 8 or later.
+Installs over the earlier version and keeps everything.
